@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    font-size: 0.12rem;
+    font-family: "Microsoft YaHei" ! important;
+}
+i{font-style:normal}
+a {
+	text-decoration: none;
+	color: #333;
+}
+/*清除浮动*/
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.bg{
+    width: 100%;
+    height: 4.9rem;
+    background: url('/img/person.png') no-repeat;
+    background-size: 100% 100% ;
+}
+
+.back{
+    float: left;
+    width: 0.25rem;
+    height: 0.26rem;
+    border: 0.03rem solid #ffffff;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+    margin-top: 0.66rem;
+    margin-left: 0.3rem;
+}
+.touxiang{
+    height: 1.2rem;
+    margin: 0.53rem 0 1rem 0.3rem;
+}
+.touxiang img{
+    width: 1.2rem;
+    height: 1.2rem;
+    padding-right: 0.62rem;
+    float: left;
+}
+.touxiang .name{
+    font-size: 0.34rem;
+    color: #fff;
+    float: left;
+    height: 0.5remm;
+}
+.name .btn{
+    float: left;
+}
+.qiye{
+    float: left;
+}
+.rz{
+    float: left;
+    margin-top: 0.24rem;
+}
+.rz span{
+    
+    border: 0.01rem solid #fff;
+    font-size: 0.26rem;
+    color: #fff;
+    padding: 0.14rem;
+    border-radius: 0.25rem;
+    margin-right: 0.3rem;
+}
+.p{
+    font-size: 0.34rem;
+    color: #fff;
+    margin-left: 0.3rem;
+
+}
+/* main */
+.main{
+    height: 9rem;
+    background: #ffffff;
+    margin-top: -0.15rem;
+    border-radius: 0.22rem;
+}
+.tab-tit{
+    height: 1.12rem;
+    /* padding: 0rem 0.88rem; */
+    line-height: 1.12rem;
+}
+.tab-tit a{
+    display: inline-block;
+    font-size: 0.32rem;
+    text-align: center;
+    color: #797979;
+    text-decoration:none;
+    float: left;
+    width: 25%;
+    border-bottom: 1px solid #eff3ff;
+}
+.tab-tit a::after{
+    width: 0.4rem;
+    height: 0.1rem;
+    text-align: center;
+    margin: auto;
+    background: #2f82ff;
+    clear: both;
+    content: "\0020";
+    display: block;
+    overflow: hidden;
+    display: none;
+}
+.tab-tit .cur{
+    color: #2f82ff;
+}
+.tab-con .msg{
+    /* height: 400px; */
+    /* width: 598px; */
+    margin: 0 auto;
+    padding-top: 0.4rem;
+    height: 2.7rem;
+    border-bottom: 0.1rem solid #f5f8fc;
+}
+
+/* .list{
+    padding: 0 0.3rem;
+} */
+.list .job{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.3rem;
+}
+.list .job span{
+    color: #2f82ff;
+    font-size: 0.28rem;
+}
+.list b{
+    font-weight: normal;
+    font-size: 0.3rem;
+    color: #000;
+}
+
+.list .address{
+    margin: 0.3rem 0 0.3rem 0.3rem;
+}
+.list .address span{
+    padding: 0.1rem 0.2rem;
+    font-size: 0.28rem;
+    color: #797979;
+    background: #f5f8fc;
+    border-radius: 0.08rem;
+    margin-right: 0.3rem;
+}
+.list .user{
+    height: 0.97rem;
+    margin: 0 0.3rem 0.3rem 0.3rem;
+}
+.list .user .userinfo{
+    font-size: 0.22rem;
+}
+.list .user .userinfo img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.45rem;
+    height: 0.45rem;
+    /* background: #888; */
+    border-radius: 50%;
+    margin-right:0.14rem; 
+}
+.list .user .userinfo span{
+    font-size: 0.22rem;
+    color: #000;
+}
+.list .user .time{
+    color: #797979;
+    font-size: 0.22rem;
+    padding-top: 0.3rem;
+}
+.list .user .time .click{
+    float: right;
+}
+.list .user .time .click span{
+    padding-right: 1.1rem;
+}
+.list .user .time .click img{
+    width: 0.28rem;
+    height: 0.26rem;
+    vertical-align: middle;
+    display: inline-block;
+}

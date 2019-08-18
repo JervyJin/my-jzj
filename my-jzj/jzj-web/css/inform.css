@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    font-size: 0.12rem;
+    font-family: "Microsoft YaHei" ! important;
+}
+body {
+    background: #ffffff;
+}
+i{font-style:normal}
+a {
+	text-decoration: none;
+	color: #333;
+}
+/*清除浮动*/
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.header{
+    text-align: center;
+    margin: 0.24rem 0;
+}
+.header .back{
+    float: left;
+    width: 0.25rem;
+    height: 0.26rem;
+    border: 0.02rem solid #000;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+    margin-top: 0.05rem;
+    margin-left: 0.3rem;
+}
+.header .title{
+    font-family: PingFangSC-Regular, sans-serif;
+    color: #000;
+    font-size: 0.32rem;
+}
+.reason{padding: 0 0.3rem 0 0;}
+.reason .title,.add .title,.upload .title {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    width: 100%;
+    /* padding: 0.3rem 0; */
+    color: #000;
+}
+.reason .title i,.add .title i,.upload .title i{
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 0.2rem;
+    width: 0.1rem;
+    height: 0.28rem;
+    background: #2f82ff;
+}
+.reason .title span,.add .title span,.upload .title span{
+    font-size: 0.28rem;
+    vertical-align: middle;
+}
+.reason ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.3rem;
+    border-top: 0.01rem solid #f5f8fc;
+    line-height: 0.92rem;
+    height: 0.92rem;  
+}
+
+.reason ul li>label{
+    font-size: 0.28rem;
+    color: #797979;
+}
+.reason ul li >img{
+    float: right;
+    width: 0.3rem;
+    height: 0.3rem;
+    vertical-align: middle;
+}
+.line{
+   width: 100%;
+   height: 0.09rem; 
+   background: #f5f8fc;
+}
+.add{height: 3.28rem;}
+.add .title i{
+    display: inline-block;
+    margin-right: 0.2rem;
+    width: 0.1rem;
+    height: 0.28rem;
+    background: #2f82ff;
+}
+.add .title{border-bottom: 0.01rem solid #f5f8fc;}
+.add textarea{
+    width: 100%;
+    border: none;
+    font-family: SourceHanSansCN-Regular;
+    border: 0;
+    font-size: 0.28rem;
+    color: #c6c6c6;
+    line-height: 0.45rem;
+    text-indent:0.3rem;
+}
+.upload .title {
+    border-bottom: 0.01rem solid #f5f8fc;
+}
+.upload .button{
+    /* margin-top: 1.2rem; */
+    text-align: center;
+    font-size: 0.32rem;
+}
+.button .button1{
+    /* display: inline-block; */
+    color: #797979;
+    background: #eeeeee;
+    width: 2.2rem;
+    height: 0.88rem;
+    border-radius: 0.16rem;
+    border: none;
+}
+.button .button2{
+    /* display: inline-block; */
+    color: #f5f8fc;
+    background: #2f82ff;
+    width: 2.2rem;
+    height: 0.88rem;
+    border-radius: 0.16rem;
+    border: none;
+}
+.imgBox{
+    position: relative;
+    width: 2.15rem;
+    height: 2.15rem;
+    margin: 0.4rem 0;
+}
+.file-box{
+    position: relative;
+    width: 2.15rem;
+    height: 2.15rem;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    margin: 0.4rem 0;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 2.15rem;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+.uploadphoto{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}

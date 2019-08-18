@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" type="text/css" href="../css/person_main.css">
+
+    <!-- 引入组件 -->
+    <title></title>
+</head>
+
+<body>
+    <!-- 容器元素 -->
+    <div id="app">
+        <person></person>
+    </div>
+
+    <!-- 个人主体模板 -->
+    <template id="tpl_person">
+        <section class="person">
+           <div class="bg">
+                <div class="header clearfix">
+                    <span class="back"></span>
+                </div>
+                <div class="touxiang clearfix">
+                    <img src="../img/av.png" alt="">
+                    <div class="qiye">
+                        <p><span class="name">dfdffvgfffdss</span></p>
+                        <p class="rz">
+                            <span>个人已认证</span><span>企业已认证</span>
+                        </p>
+                    </div>
+                
+                </div> 
+                <p class="p">TA的动态</p>
+            </div>
+            <div class="main">
+                <div class="tab-tit">
+                    <a href="javascript:;" @click="msg=0" :class="{'cur':msg===0}">人员</a>
+                    <a href="javascript:;" @click="msg=1" :class="{'cur':msg===1}">机械</a>
+                    <a href="javascript:;" @click="msg=2" :class="{'cur':msg===2}">材料</a>
+                    <a href="javascript:;" @click="msg=3" :class="{'cur':msg===3}">车辆</a>
+                </div>
+                <div class="tab-con">
+                    <div v-show="msg===0" class="msg" v-for="(item,index) in 3">
+                        <div class="list">
+                            <div class="job">
+                                <b>【招聘】 工人</b>
+                                <span>3000/6000/月</span>
+                            </div>
+                            <div class="address">
+                                <span>{{item.address}}郑州-二七区-</span>
+                                <span>{{item.work_age}}3-5年 </span>
+                            </div>
+                            <div class="user">
+                                <div class="userinfo">
+                                    <img :src="photo" alt="">
+                                    <span>河南捷之捷网络技术有限公司</span>
+                                </div>
+                                <div class="time clearfix">
+                                    <span>10小时前</span>
+                                    <div class="click">
+                                        <span>浏览0</span>
+                                        <i><img src="../img/评论.png" alt="">0</i> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div v-show="msg===1" class="msg" v-for="(item,index) in 2">
+                        <div class="list">
+                            <div class="job">
+                                <b>【招聘】 工人</b>
+                                <span>3000/6000/月</span>
+                            </div>
+                            <div class="address">
+                                <span>{{item.address}}郑州-二七区-</span>
+                                <span>{{item.work_age}}3-5年 </span>
+                            </div>
+                            <div class="user">
+                                <div class="userinfo">
+                                    <img :src="photo" alt="">
+                                    <span>河南捷之捷网络技术有限公司</span>
+                                </div>
+                                <div class="time clearfix">
+                                    <span>10小时前</span>
+                                    <div class="click">
+                                        <span>浏览0</span>
+                                        <i><img src="../img/评论.png" alt="">0</i> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-show="msg===2" class="msg" v-for="(item,index) in 4">
+                        <div class="list">
+                            <div class="job">
+                                <b>【招聘】 工人</b>
+                                <span>3000/6000/月</span>
+                            </div>
+                            <div class="address">
+                                <span>{{item.address}}郑州-二七区-</span>
+                                <span>{{item.work_age}}3-5年 </span>
+                            </div>
+                            <div class="user">
+                                <div class="userinfo">
+                                    <img :src="photo" alt="">
+                                    <span>河南捷之捷网络技术有限公司</span>
+                                </div>
+                                <div class="time clearfix">
+                                    <span>10小时前</span>
+                                    <div class="click">
+                                        <span>浏览0</span>
+                                        <i><img src="../img/评论.png" alt="">0</i> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-show="msg===3" class="msg" v-for="(item,index) in 1">
+                        <div class="list">
+                            <div class="job">
+                                <b>【招聘】 工人</b>
+                                <span>3000/6000/月</span>
+                            </div>
+                            <div class="address">
+                                <span>{{item.address}}郑州-二七区-</span>
+                                <span>{{item.work_age}}3-5年 </span>
+                            </div>
+                            <div class="user">
+                                <div class="userinfo">
+                                    <img :src="photo" alt="">
+                                    <span>河南捷之捷网络技术有限公司</span>
+                                </div>
+                                <div class="time clearfix">
+                                    <span>10小时前</span>
+                                    <div class="click">
+                                        <span>浏览0</span>
+                                        <i><img src="../img/评论.png" alt="">0</i> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <script>
+        
+
+    </script>
+
+    <script src="../lib/rem.js"></script>
+    <script src="../lib/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="../lib/vue.js"></script>
+    <script type="text/javascript" src="../view/person_main.js"></script>
+</body>
+
+</html>

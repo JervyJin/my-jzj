@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../css/recruitDetail.css">
+	<title></title>
+</head>
+<body>
+	<!-- 容器元素 -->
+	<div id="app">
+		
+        <home></home>
+	</div>
+<!-- 求职详情模板 -->
+<template id="tpl_home">
+	<section class="home">
+        <div class="top clearfix">
+            <div class="top_main">
+                <div class="back"></div>
+                <span class="title">车辆出售详情</span>
+                <div class="share">
+                    <span href="#"><img src="../img/share1.png" class="img1"></span> 
+                    <span><img @click="jsSetApp()" src="../img/share.png" class="img2"></span> 
+                    <span><img @click="" src="../img/inform.png" class="img3"></span> 
+                </div>
+            </div>
+        </div>
+		<div class="header ">
+            <img :src="photo" alt="">
+            <p class="name" >{{uname}} {{rests}}</p>
+            <p class="jdtype">{{type}}</p>
+            <p class="age">
+                <i><img src="../img/time.png" alt=""> {{work_age}}</i>
+                <i><img src="../img/age.png" alt=""> {{age}}</i>
+                <i><img src="../img/edu.png" alt=""> {{education}}</i>
+            </p>
+
+
+        </div>
+        <div class="line" style="width: 90%;height: 0.01rem; margin:auto;background:#eff3ff;margin-top:0.5rem;"></div>
+        <!-- 求职期望 -->
+        <div class="hope clearfix">
+            <div>
+                <span class="icon"></span>
+                <span class="title">求职期望</span>
+            </div>
+            <div class="left">
+                <ul>
+                    <li >{{type}}</li>
+                    <li>{{address}}</li>
+                </ul>
+                <div class="pay">{{expected_salary}}</div>
+            </div>
+            
+        </div>
+        <div class="line" style="width: 90%;height: 0.01rem; margin:auto;background:#eff3ff;margin-bottom:0.5rem;"></div>
+        <!-- 工作经历 -->
+        <div class="experience">
+            <div>
+                <span class="icon"></span>
+                <span class="title">工作经历</span>
+            </div>
+            <div class="main">{{job_description}}</div>
+        </div>
+        <!-- 证明说明 -->
+        <div class="prove">
+            <div>
+                <span class="icon"></span>
+                <span class="title">证件说明</span>
+            </div>
+            <div class="main">{{certificate}}</div>
+        </div>
+        <!-- 评价 -->
+        <div class="est">
+            <div>
+                <span class="icon"></span>
+                <span class="title">评价</span>
+            </div>
+            <div class="wrp">
+                <div class="main" v-for="item in 4">
+                    <div class="touxiang"></div>
+                    <div class="user">
+                        <p>{{uname}}</p>
+                        <span class="pl">ddd</span>
+                        <span style="float: right;color: #bd5667;font-size:0.28rem;">删除</span>
+                    </div>
+                    
+                    <div class="req">
+                        <div class="touxiang"></div>
+                        <p><span>发布者 </span> 回复 <span>用户A</span></p>
+                        <span style="float: right;font-size:0.28rem;color: #3e761e">回复</span>
+                        <span class="pl">sddddddddddddddd</span> 
+                    </div> 
+                    <div class="line"></div>
+                </div>
+                <!-- <div class="line"></div> -->
+            </div>
+        </div>
+        <!-- 相关信息 -->
+        <div class="about-list">
+            <p class="title">相关信息</p>
+            <div class="list" v-for="(item,index) in items" :key="index">
+                <div class="job">
+                    <b>【求职】 {{item.type}}</b>
+                    <span>{{item.expected_salary}}/月</span>
+                </div>
+                <div class="address">
+                    <span>{{item.address}}</span>
+                    <span>{{item.work_age}} </span>
+                </div>
+                <div class="user">
+                    <div class="userinfo">
+                        <img :src="photo" alt="">
+                        <span>{{item.uname}}</span>
+                    </div>
+                    <div class="time clearfix">
+                        <span>{{item.distance}}</span>
+                        <div class="click">
+                            <span>浏览 {{item.browseNum}}</span>
+                            <i><img src="../img/评论.png" alt=""> {{item.commentNum}}</i> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bottom">
+            <div class="touxiang"><img :src="photo" /></div>
+            <a href="javascript:void(0)">
+                <p><img src="../img/写评价.png" alt=""></p>
+                <p>评论</p>
+            </a>
+            <div class="lianxi">
+                <img src="../img/在线沟通.png" alt="">
+                <span>在线沟通</span>
+                </div>
+            <div class="zaixian">
+                <img src="../img/联系TA.png" alt="">
+                <span>联系TA</span>
+            </div>
+            
+
+        </div>
+       
+        <!-- <div class="dialog" v-show="isShow">
+
+        </div> -->
+	</section>
+</template>
+
+<!-- 引入脚本 -->
+</script>
+<script src="../lib/jquery-1.11.0.js"></script>
+<script src="../lib/rem.js"></script>
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script type="text/javascript" src="../view/recruitDetail.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    font-size: 0.12rem;
+    font-family: "Microsoft YaHei" ! important;
+}
+body{font-family:"Microsoft Yahei";}
+i{font-style:normal}
+a {
+	text-decoration: none;
+	color: #333;
+}
+/*清除浮动*/
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.bg{
+    width: 100%;
+    height: 4.67rem;
+    background: url('../img/company.png') no-repeat;
+    background-size: 100% 100% ;
+}
+
+.back{
+    float: left;
+    width: 0.25rem;
+    height: 0.26rem;
+    border: 0.03rem solid #ffffff;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+    margin-top: 0.66rem;
+    margin-left: 0.3rem;
+}
+.touxiang{height: 1.2rem;text-align: center;margin-top: 0.23rem;}
+.touxiang img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.bg .main{
+    padding-top: 0.3rem;
+    height: 1.15rem;
+    text-align: center;
+    color: #ffffff;
+}
+.bg .main p:first-child{
+    font-size: 0.32rem;
+}
+.bg .main p:last-child{
+    padding-top: 0.15rem;
+    font-size: 0.24rem;
+}
+.company_main{
+    margin-top: -0.3rem;
+    background: #fff;
+    border-radius: 0.1rem;
+}
+.company_1 .title,.company_2 .title,.company_3 .title{
+    border-bottom: 0.01rem solid #f5f8fc;
+    height: 1.14rem;
+    line-height: 1.14rem;
+}
+.company_1 .title i,.company_2 .title i,.company_3 .title i{
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 0.2rem;
+    width: 0.1rem;
+    height: 0.3rem;
+    background: #000;
+    font-size: 0.34rem;
+}
+
+.company_1 .title span,.company_2 .title span,.company_3 .title span{
+    font-size: 0.34rem;
+}
+.company_1 .text{
+    height: 1.66rem;
+    padding: 0.3rem;
+    line-height: 0.35rem;
+    font-size: 0.26rem;
+    color: #797979;
+    text-indent: 2em;
+    overflow: hidden;
+}
+.pull{
+    text-align: center;
+}
+.pull img{
+    width: 0.32rem;
+    height: 0.2rem;
+}
+.company_2 .address img{
+    width: 0.58rem;
+    height: 0.58rem;
+    vertical-align: middle;
+}
+.company_2 .address{
+   padding:  0.5rem 0.64rem 0.9rem 0.64rem;
+}
+.company_2 .address .text{
+    line-height: 0.26rem;
+    font-size: 0.26rem;
+    color: #797979; 
+}
+.company_3 p{
+    width: 90%;
+    font-size: 0.26rem;
+    color: #797979;
+    line-height: 0.7rem;
+    margin: 0.3rem auto;
+}
+.company_3 p span{
+    font-size: 0.26rem;
+    color: #000;
+    padding-right: 0.3rem;
+}

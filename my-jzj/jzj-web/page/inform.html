@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" type="text/css" href="../css/inform.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.0/lib/index.css">
+
+    <!-- 引入组件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.0/lib/vant.min.js"></script>
+
+    <title></title>
+</head>
+
+<body>
+    <!-- 容器元素 -->
+    <div id="app">
+
+        <inform></inform>
+    </div>
+    <!-- 求职详情模板 -->
+    <template id="tpl_inform">
+        <section class="inform">
+            <div class="header clearfix">
+                <span class="back"></span>
+                <span class="title">举报</span>
+            </div>
+            <div class="reason">
+                <div class="title">
+                    <i></i>
+                    <span>举报原因</span>
+                </div>
+                <ul>
+                    <li>
+                        <label>薪资不真实</label>
+                        <input type="radio" value="薪资不真实" v-model="picked" @change="changeRadio('薪资不真实')">
+                    </li>
+                    <li>
+                        <label>工作经验或学历造假</label>
+                        <input type="radio" value="工作经验或学历造假" v-model="picked" @change="changeRadio('工作经验或学历造假')">
+                    </li>
+                    <li>
+                        <label>公司信息不真实</label>
+                        <input type="radio" value="公司信息不真实" v-model="picked" @change="changeRadio('公司信息不真实')">
+                    </li>
+                    <li>
+                        <label>其他</label>
+                        <input type="radio" value="其他" v-model="picked" @change="changeRadio('其他')">
+                    </li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <!-- 补充说明 -->
+            <div class="add">
+                <div class="title">
+                    <i></i>
+                    <span>补充说明</span>
+                </div>
+                <textarea v-model="value" placeholder="请在此处输入文字..." @input="changeInput($event)"></textarea>
+            </div>
+            <div class="line"></div>
+            <!-- 上传图片 -->
+            <div class="upload">
+                <div class="title">
+                    <i></i>
+                    <span>上传图片</span>
+                </div>
+                <img v-for="(item,index) in imgcode" :key="index" :src="item" class="imgBox">
+                <div class="file-box">
+                    <input type="file" class="uploadphoto" @change="uploadphoto($event)" ref="inputer" multiple
+                            accept="image/*">+
+                </div>
+                
+
+                <div class="button">
+                    <button type="button" @click="submit('reset')" class="button1">取消</button>
+                    <button type="button" @click="submit('success')" class="button2">提交</button>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- 引入脚本 -->
+    <script>
+
+
+        // 调用函数式组件
+        // vant.Toast('提示');
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+    </script>
+    <script src="../lib/jquery-1.11.0.js"></script>
+    <script src="../lib/rem.js"></script>
+    <script type="text/javascript" src="../lib/vue.js"></script>
+    <script type="text/javascript" src="../view/inform.js"></script>
+</body>
+
+</html>

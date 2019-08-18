@@ -1,0 +1,296 @@
+* {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    font-size: 0.12rem;
+    font-family: "Microsoft YaHei" ! important;
+}
+/* 实现头部定位 */
+body {
+    background: #ffffff;
+}
+i{font-style:normal}
+a {
+	text-decoration: none;
+	color: #333;
+}
+/*清除浮动*/
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.top{
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 2px 4px 6px #f5f9fd;
+    top: 0;
+    width: 100%;
+    height: 1.42rem;
+    position: fixed;
+    margin: 0 0 0.6rem 0;
+}
+.top_main{
+    margin: 0.66rem 0.3rem 0 0.3rem;
+}
+.top .back{
+    width: 0.15rem;
+    height: 0.15rem;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+    float: left;
+    margin-top: 0.1rem;
+}
+.top .title{
+    font-size: 0.32rem;
+    color: #000;
+    
+}
+.top .share{
+   float: right;
+}
+.top .share span img{
+    float: left;
+    width: 0.44rem;
+    height: 0.44rem;
+}
+.top .share .img1,.top .share .img2{
+    padding-right: 0.3rem;
+}
+.header{
+    margin-top: 1.6rem;
+    text-align: center;
+    height: 4.7rem;
+}
+
+.header img{
+    width: 1.2rem;
+    height: 1.2rem;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 0.6rem;
+}
+.header .name{
+    color: #797979;
+    font-size: 0.28rem;
+    padding-top: 0.28rem;
+}
+.header .jdtype{
+    color: #000;
+    font-size: 0.42rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.6rem
+}
+.header .age i{
+    font-size: 0.29rem;
+    color: #797979;
+    margin-right: 0.3rem;
+}
+.header .age i > img{
+    vertical-align: middle;
+    width: 0.24rem;
+    height: 0.24rem;
+}
+
+.hope{
+    padding: 0.5rem 0.8rem 0.4rem 0;
+}
+.hope .title,.experience .title,.prove .title,.est .title{
+    font-size: 0.3rem;
+    vertical-align: top;
+    margin-left: 0.20rem;
+}
+.hope .icon,.experience .icon,.prove .icon,.est .icon{
+    display: inline-block;
+   height: 25px;
+   width: 5px;
+   background: #2a84ff;
+}
+.hope .left{
+    margin-left: 0.8rem;
+}
+.hope .left ul{float: left;}
+.hope .left ul li{
+    line-height: 24px;
+    font-size: 0.28rem;
+}
+.hope .left ul li:first-child{
+    margin-top: 0.24rem;
+    margin-bottom: 0.20rem;
+}
+.pay{
+    float: right;
+    padding-top: 0.5rem;
+    font-size: 0.28rem;
+    color:#2f82ff;
+    font-family:MicrosoftYaHei;
+}
+.experience .main,.prove .main{
+    width: 80%;
+    line-height: 0.36rem;
+    margin: 0.4rem auto;
+    padding: 0.3rem;
+    color: #797979;
+    font-size: 0.26rem;
+    box-shadow: 0 0 10px #e5e7ec;
+    border-radius: 0.1rem; 
+}
+
+.est .main{
+    width: 90%;
+    margin:0 auto;
+    margin-top: 0.4rem;
+}
+.est .main .line{
+    width: 90%;
+    height: 0.01rem; 
+    margin:auto;
+    background:#eff3ff;
+    margin-bottom:0.5rem;
+}
+.est .main .touxiang{
+    float: left;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.1rem;
+    border: 1px solid #333;
+    border-radius: 50%;
+    vertical-align: middle
+}
+.est .main .user{
+    margin-top: 0.4rem;
+    line-height: 0.37rem;
+}
+.est .main .user .pl,.est .main .req .pl{
+    color: #797979;
+    font-size: 0.28rem;
+}
+.est .main .user p{
+    font-size: 0.28rem;
+    color: #083e81;
+}
+
+.est .main .req{
+    padding-top: 0.3rem;
+    padding-left: 0.7rem;
+    line-height: 0.5rem;
+}
+.est .main .req span{
+    color: #083e81;
+    font-size: 0.28rem;
+}
+.about-list .title{
+    padding-left: 0.3rem;
+    font-size: 0.34rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0.6rem;
+}
+.about-list .list{
+    padding: 0 0.3rem;
+}
+.about-list .list .job{
+    display: flex;
+    justify-content: space-between;
+}
+.about-list .list .job span{
+    color: #2f82ff;
+    font-size: 0.28rem;
+}
+.about-list .list b{
+    font-weight: normal;
+    font-size: 0.3rem;
+    color: #000;
+}
+
+.about-list .list .address{
+    margin: 0.3rem 0 0.3rem 0.3rem;
+}
+.about-list .list .address span{
+    padding: 0.1rem 0.2rem;
+    font-size: 0.28rem;
+    color: #797979;
+    background: #f5f8fc;
+    border-radius: 0.08rem;
+    margin-right: 0.3rem;
+}
+.about-list .list .user{
+    height: 0.97rem;
+    margin: 0 0.3rem 0.3rem 0.3rem;
+}
+.about-list .list .user .userinfo{
+    font-size: 0.22rem;
+}
+.about-list .list .user .userinfo img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.45rem;
+    height: 0.45rem;
+    /* background: #888; */
+    border-radius: 50%;
+    margin-right:0.14rem; 
+}
+.about-list .list .user .time{
+    color: #797979;
+    font-size: 0.22rem;
+    padding-top: 0.3rem;
+}
+.about-list .list .user .time .click{
+    float: right;
+}
+.about-list .list .user .time .click span{
+    padding-right: 1.1rem;
+}
+.about-list .list .user .time .click img{
+    width: 0.28rem;
+    height: 0.26rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+.bottom{
+    bottom: 0;
+    height: 0.99rem;
+    /* position: fixed;
+    bottom: 0; */
+}
+.bottom .touxiang img{
+    float: left;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius:50%;
+    margin: 0 0.3rem 0 0.3rem;
+}
+.bottom a{
+    float: left;
+}
+.bottom a img{
+    width: 0.44rem;
+    height: 0.44rem;
+}
+.zaixian,.lianxi{
+    color: #fff;
+    float: right;
+    width: 2.1rem;
+    height: 0.98rem;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 0.98rem;
+}
+.zaixian img,.lianxi img{
+    width: 0.3rem;
+    height: 0.3rem;
+    vertical-align: middle;
+} 
+.zaixian{
+    background: #2f82ff;
+    color: #fff;
+}
+.zaixian span,.lianxi span{
+    font-size: 0.32rem;
+}
+.lianxi{
+    background: #ffa800;
+}
